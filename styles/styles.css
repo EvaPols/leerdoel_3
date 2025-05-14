@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: rgb(246, 243, 255);
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;  /* Onder elkaar: eerst logo, dan nav */
+  align-items: center;     /* Logo centreren */
+  background-color: black;
+  color: white;
+  padding: 2vh 0;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+  
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;  /* Nav helemaal naar rechts */
+  padding: 2rem;            /* Optioneel: ruimte aan de zijkanten */
+}
+  
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+}
+  
+
+nav a:focus {
+  padding: 3vw;
+  padding: 1vh;
+  background-color: pink;
+}
+  
+nav a:hover {
+  background: pink;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+/* voorpagina */
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  max-width: 90%;
+}
+
+.voorpagina {
+  height: auto;
+  flex-direction: column;
+}
+
+.voorpagina img {
+  display: block;
+  width: 100%; /* Zorgt dat de afbeelding de container volledig vult */
+  height: auto;
+  margin: 4%
+}
+
+/* voorpagina */
+/* mijn werk pagina */
+
+h1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.fotoswerk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mijnwerk {
+  object-fit: contain;
+  flex-direction: column;
+  padding: .1%;
+}
+
+.mijnwerk img {
+  width: 90%; /* Zorgt dat de afbeelding de container volledig vult */
+  margin: 2%;
+}
+
+.phone-frame {
+  width: 428px;
+  height: 800px;
+  border: 16px solid black;
+  border-radius: 36px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: auto; /* Centreert op de pagina */
+}
+
+.phone-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* contact */
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: black;
+  border: 2px solid #e0c5e5;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e080b0;
+}
+
+/* paginas projecten */
+
+main {
+  color: black;
+  font-size: 1.3em;
+  margin: 5%;
+  text-align: center;
+}
+
+.eerstekop {
+  display: flex;
+}
+
+.eerstekop p {
+  width: 70%;
+  margin-right: 5%;
+}
+
+.tweedekop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.model-container {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  height: 100px;
+  font-size: 2em;
+  text-decoration: none;
+}
